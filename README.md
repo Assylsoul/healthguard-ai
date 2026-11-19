@@ -42,6 +42,21 @@ Only 9.4% of providers are fraudulent (506 of 5,410), so the task is strongly im
 
 Threshold tuning raised the F1 of the final model from 0.575 to 0.710. For maximum fraud coverage, XGBoost at threshold 0.40 reaches a recall of 0.842.
 
+## Tools
+
+- **Language:** Python 3
+- **Environment:** Jupyter Notebook (analysis and modelling), Streamlit (demo app)
+
+| Library | Used for |
+|---|---|
+| `pandas`, `numpy`, `scipy` | Data cleaning, aggregation, feature engineering |
+| `matplotlib`, `seaborn`, `plotly` | EDA plots, charts, gauge in the app |
+| `scikit-learn` | Logistic Regression, Random Forest, Stacking, `RobustScaler`, `RandomizedSearchCV`, metrics |
+| `xgboost`, `lightgbm` | Gradient boosting models |
+| `imbalanced-learn` | SMOTE / SMOTETomek resampling |
+| `joblib`, `pickle` | Saving and loading the trained model |
+| `streamlit` | Interactive web app |
+
 ## Demo app
 
 **HealthGuard AI** is a Streamlit app with two pages:
